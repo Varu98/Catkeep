@@ -1,14 +1,21 @@
 import "../styles.css";
+import text from "../text";
 const Note = () => {
   return (
-    <div className="note">
-      <h1 className="note_h">Lorem Ipsum</h1>
-      <p className="note_p">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-        distinctio!
-      </p>
+    <div>
+      {text.map((notes) => {
+        return (
+          <div className="note flex-container" key={notes.key}>
+            <div className="flex-item">
+              <div className="note_h ">
+                <h2>{notes.title}</h2>
+              </div>
+              <div className="note_p ">{notes.desc}</div>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
-
 export default Note;

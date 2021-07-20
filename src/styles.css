@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
 }
 body {
   background-color: #2c2e43;
@@ -29,12 +28,12 @@ html {
 }
 .note {
   text-align: center;
+  width: 200px;
   background-color: #333547;
-  width: 15rem;
-  height: 10rem;
+  margin: 10px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  margin-left: 10%;
+
   transition: transform 450ms;
 }
 .note:hover {
@@ -46,4 +45,14 @@ html {
 }
 .note_p {
   color: #ffd523;
+}
+.flex-container {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 1rem 2rem;
+}
+.flex-item {
+  flex-shrink: 2;
+  padding: 1rem 2rem;
 }
